@@ -1,7 +1,10 @@
+import MdShowChart from 'react-icons/lib/md/show-chart'
+
 export default {
-  name: 'siteSettingsAnalytics',
+  name: 'settingsAnalytics',
   title: 'Analytics',
   type: 'document',
+  icon: MdShowChart,
   fields: [
     {
       name: 'googleAnalyticsId',
