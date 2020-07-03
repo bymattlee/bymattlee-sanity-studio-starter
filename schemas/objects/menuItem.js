@@ -1,4 +1,4 @@
-import MdCreate from 'react-icons/lib/md/create'
+import { MdCreate } from 'react-icons/lib/md'
 
 export default {
   name: 'menuItem',

@@ -2,8 +2,8 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // Documents
-import article from './documents/article'
-import category from './documents/category'
+import article from './documents/articles/article'
+import articleCategory from './documents/articles/category'
 import menu from './documents/menu'
 import settingsSeo from './documents/settings/seo'
 import settingsFavicons from './documents/settings/favicons'
@@ -25,10 +25,10 @@ import socialSiteYouTube from './objects/settings/youtube'
 export default createSchema({
   name: 'default',
   types: schemaTypes.concat([
-    
+
     /* Documents */
     article,
-    category,
+    articleCategory,
     menu,
     settingsSeo,
     settingsFavicons,

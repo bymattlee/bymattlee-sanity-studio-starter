@@ -1,4 +1,4 @@
-import MdShowChart from 'react-icons/lib/md/show-chart'
+import { MdShowChart } from 'react-icons/lib/md'
 
 export default {
   name: 'settingsAnalytics',

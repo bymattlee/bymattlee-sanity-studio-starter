@@ -1,4 +1,4 @@
-import MdMenu from 'react-icons/lib/md/menu'
+import { MdMenu } from 'react-icons/lib/md'
 
 export default {
   name: 'menu',

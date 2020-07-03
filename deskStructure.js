@@ -1,12 +1,5 @@
 import S from '@sanity/desk-tool/structure-builder'
-import MdCreate from 'react-icons/lib/md/create'
-import MdApps from 'react-icons/lib/md/apps'
-import MdMenu from 'react-icons/lib/md/menu'
-import MdSettings from 'react-icons/lib/md/settings'
-import MdBuild from 'react-icons/lib/md/build'
-import MdLanguage from 'react-icons/lib/md/language'
-import MdPeople from 'react-icons/lib/md/people'
-import MdShowChart from 'react-icons/lib/md/show-chart'
+import { MdCreate, MdApps, MdMenu, MdSettings, MdBuild, MdLanguage, MdPeople, MdShowChart } from 'react-icons/lib/md'
 
 export default () =>
   S.list()
@@ -15,15 +8,37 @@ export default () =>
       S.listItem()
         .title('Articles')
         .icon(MdCreate)
-        .child(S.documentTypeList('article').title('Articles')),
-      S.listItem()
-        .title('Categories')
-        .icon(MdApps)
-        .child(S.documentTypeList('category').title('Categories')),
-      S.listItem()
+        .child(
+          S.list()
+            .title('Articles')
+            .items([
+              S.documentTypeListItem('article')
+                .title('All Articles')
+                .icon(MdCreate),
+              S.listItem()
+                .title('Articles By Category')
+                .icon(MdCreate)
+                .child(
+                  S.documentTypeList('articleCategory')
+                    .title('Articles By Category')
+                    .child(catId =>
+                      S.documentList()
+                        .schemaType('article')
+                        .title('Articles')
+                        .filter(
+                          '_type == "article" && $catId in categories[]._ref'
+                        )
+                        .params({ catId })
+                    )
+                  ),
+              S.documentTypeListItem('articleCategory')
+                .title('Categories')
+                .icon(MdApps)
+            ])
+        ),
+      S.documentTypeListItem('menu')
         .title('Menus')
-        .icon(MdMenu)
-        .child(S.documentTypeList('menu').title('Menus')),
+        .icon(MdMenu),
       S.listItem()
         .title('Settings')
         .icon(MdSettings)
@@ -35,9 +50,8 @@ export default () =>
                 .title('SEO')
                 .icon(MdBuild)
                 .child(
-                  S.editor()
+                  S.document()
                     .title('SEO')
-                    .id('settingsSeo')
                     .schemaType('settingsSeo')
                     .documentId('settingsSeo')
                 ),
@@ -45,9 +59,8 @@ export default () =>
                 .title('Favicons')
                 .icon(MdLanguage)
                 .child(
-                  S.editor()
+                  S.document()
                     .title('Favicons')
-                    .id('settingsFavicons')
                     .schemaType('settingsFavicons')
                     .documentId('settingsFavicons')
                 ),
@@ -55,9 +68,8 @@ export default () =>
                 .title('Social')
                 .icon(MdPeople)
                 .child(
-                  S.editor()
+                  S.document()
                     .title('Social')
-                    .id('settingsSocial')
                     .schemaType('settingsSocial')
                     .documentId('settingsSocial')
                 ),
@@ -65,9 +77,8 @@ export default () =>
                 .title('Analytics')
                 .icon(MdShowChart)
                 .child(
-                  S.editor()
+                  S.document()
                     .title('Analytics')
-                    .id('settingsAnalytics')
                     .schemaType('settingsAnalytics')
                     .documentId('settingsAnalytics')
                 )

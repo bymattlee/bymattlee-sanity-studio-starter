@@ -1,4 +1,4 @@
-import MdPerson from 'react-icons/lib/md/person'
+import { MdPerson } from 'react-icons/lib/md'
 
 export default {
   name: 'socialSiteTwitter',

@@ -1,4 +1,4 @@
-import MdBuild from 'react-icons/lib/md/build'
+import { MdBuild } from 'react-icons/lib/md'
 
 export default {
   name: 'settingsSeo',
