@@ -1,18 +1,29 @@
 import S from '@sanity/desk-tool/structure-builder'
+import MdCreate from 'react-icons/lib/md/create'
+import MdApps from 'react-icons/lib/md/apps'
+import MdMenu from 'react-icons/lib/md/menu'
 import MdSettings from 'react-icons/lib/md/settings'
-import MdLanguage from 'react-icons/lib/md/language'
 import MdBuild from 'react-icons/lib/md/build'
+import MdLanguage from 'react-icons/lib/md/language'
 import MdPeople from 'react-icons/lib/md/people'
 import MdShowChart from 'react-icons/lib/md/show-chart'
-
-const hiddenDocTypes = listItem =>
-  !['settingsSeo', 'settingsFavicons', 'settingsSocial', 'settingsAnalytics'].includes(listItem.getId())
 
 export default () =>
   S.list()
     .title('Content')
     .items([
-      ...S.documentTypeListItems().filter(hiddenDocTypes),
+      S.listItem()
+        .title('Articles')
+        .icon(MdCreate)
+        .child(S.documentTypeList('article').title('Articles')),
+      S.listItem()
+        .title('Categories')
+        .icon(MdApps)
+        .child(S.documentTypeList('category').title('Categories')),
+      S.listItem()
+        .title('Menus')
+        .icon(MdMenu)
+        .child(S.documentTypeList('menu').title('Menus')),
       S.listItem()
         .title('Settings')
         .icon(MdSettings)

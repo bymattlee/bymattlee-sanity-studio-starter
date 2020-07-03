@@ -25,6 +25,7 @@ import socialSiteYouTube from './objects/settings/youtube'
 export default createSchema({
   name: 'default',
   types: schemaTypes.concat([
+    
     /* Documents */
     article,
     category,
