@@ -28,7 +28,8 @@
     "react": "^16.2",
     "react-dom": "^16.2",
     "react-youtube": "^7.11.2",
-    "sanity-plugin-dashboard-widget-netlify": "^1.0.1"
+    "sanity-plugin-dashboard-widget-netlify": "^1.0.1",
+    "sanity-plugin-media": "^0.2.13"
   },
   "devDependencies": {}
 }
