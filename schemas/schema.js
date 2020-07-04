@@ -26,7 +26,6 @@ import socialSiteTwitter from './objects/settings/twitter'
 import socialSiteInstagram from './objects/settings/instagram'
 import socialSiteYouTube from './objects/settings/youtube'
 
-
 export default createSchema({
   name: 'default',
   types: schemaTypes.concat([

@@ -9,18 +9,9 @@ export default {
     {
       name: 'footerMenu',
       title: 'Footer Menu',
-      type: 'array',
+      type: 'reference',
       description: 'Select the menu that will be used in the footer.',
-      validation: Rule => Rule.max(1),
-      of: [
-        {
-          type: 'reference',
-          icon: MdViewAgenda,
-          to: [{ type: 'menu' }],
-          weak: true
-        }
-      ]
-
+      to: [{ type: 'menu' }]
     }
   ]
 }
