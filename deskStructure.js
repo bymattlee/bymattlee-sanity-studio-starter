@@ -1,5 +1,5 @@
 import S from '@sanity/desk-tool/structure-builder'
-import { MdDescription, MdCreate, MdApps, MdMenu, MdSettings, MdBuild, MdLanguage, MdPeople, MdShowChart } from 'react-icons/lib/md'
+import { MdDescription, MdCreate, MdApps, MdViewAgenda, MdMenu, MdSettings, MdBuild, MdLanguage, MdPeople, MdShowChart } from 'react-icons/lib/md'
 
 export default () =>
   S.list()
@@ -37,6 +37,33 @@ export default () =>
               S.documentTypeListItem('articleCategory')
                 .title('Categories')
                 .icon(MdApps)
+            ])
+        ),
+      S.listItem()
+        .title('Sections')
+        .icon(MdViewAgenda)
+        .child(
+          S.list()
+            .title('Sections')
+            .items([
+              S.listItem()
+                .title('Header')
+                .icon(MdViewAgenda)
+                .child(
+                  S.document()
+                    .title('Header')
+                    .schemaType('sectionsHeader')
+                    .documentId('sectionsHeader')
+                ),
+              S.listItem()
+                .title('Footer')
+                .icon(MdViewAgenda)
+                .child(
+                  S.document()
+                    .title('Footer')
+                    .schemaType('sectionsFooter')
+                    .documentId('sectionsFooter')
+                )
             ])
         ),
       S.documentTypeListItem('menu')

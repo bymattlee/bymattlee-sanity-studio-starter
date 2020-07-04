@@ -9,12 +9,12 @@ export default {
         data: [
           {
             title: 'Sanity Repo',
-            value: 'https://github.com/bymattlee/sanity-eleventy-blog',
+            value: 'https://github.com/bymattlee',
             category: 'Code'
           },
           {
-            title: 'Eleventy Repo',
-            value: 'https://github.com/bymattlee/sanity-eleventy-blog',
+            title: 'Website Repo',
+            value: 'https://github.com/bymattlee',
             category: 'Code'
           }
         ]

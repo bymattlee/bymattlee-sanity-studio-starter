@@ -5,6 +5,8 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import page from './documents/articles/page'
 import article from './documents/articles/article'
 import articleCategory from './documents/articles/category'
+import sectionsHeader from './documents/sections/header'
+import sectionsFooter from './documents/sections/footer'
 import menu from './documents/menu'
 import settingsSeo from './documents/settings/seo'
 import settingsFavicons from './documents/settings/favicons'
@@ -33,6 +35,8 @@ export default createSchema({
     page,
     article,
     articleCategory,
+    sectionsHeader,
+    sectionsFooter,
     menu,
     settingsSeo,
     settingsFavicons,
