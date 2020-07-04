@@ -2,6 +2,7 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // Documents
+import page from './documents/articles/page'
 import article from './documents/articles/article'
 import articleCategory from './documents/articles/category'
 import menu from './documents/menu'
@@ -11,9 +12,11 @@ import settingsSocial from './documents/settings/social'
 import settingsAnalytics from './documents/settings/analytics'
 
 // Objects
-import bodyText from './objects/bodyText'
-import imageBlock from './objects/imageBlock'
-import youtube from './objects/youtube'
+import richTextBlock from './objects/blocks/richText'
+import imageBlock from './objects/blocks/image'
+import youtubeBlock from './objects/blocks/youtube'
+import richTextSection from './objects/sections/richText'
+import latestArticlesSection from './objects/sections/latestArticles'
 import pageMetaData from './objects/pageMetaData'
 import menuItem from './objects/menuItem'
 import socialSiteFacebook from './objects/settings/facebook'
@@ -27,6 +30,7 @@ export default createSchema({
   types: schemaTypes.concat([
 
     /* Documents */
+    page,
     article,
     articleCategory,
     menu,
@@ -36,9 +40,11 @@ export default createSchema({
     settingsAnalytics,
 
     /* Objects */
-    bodyText,
+    richTextBlock,
     imageBlock,
-    youtube,
+    youtubeBlock,
+    richTextSection,
+    latestArticlesSection,
     pageMetaData,
     menuItem,
     socialSiteFacebook,

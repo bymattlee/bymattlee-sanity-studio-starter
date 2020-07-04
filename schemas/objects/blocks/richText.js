@@ -1,7 +1,7 @@
 export default {
-  name: 'bodyText',
+  name: 'richTextBlock',
   type: 'array',
-  title: 'Body',
+  title: 'Main Content',
   of: [
     {
       type: 'block',
@@ -48,7 +48,7 @@ export default {
       type: 'imageBlock'
     },
     {
-      type: 'youtube'
+      type: 'youtubeBlock'
     }
   ]
 }

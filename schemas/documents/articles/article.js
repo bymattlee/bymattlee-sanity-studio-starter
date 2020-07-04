@@ -71,12 +71,12 @@ export default {
       rows: 4
     },
     {
-      name: 'body',
-      title: 'Body',
-      type: 'bodyText'
+      name: 'mainContent',
+      title: 'Main Content',
+      type: 'richTextBlock'
     },
     {
-      name: 'ArticleMetaData',
+      name: 'articleMetaData',
       title: 'Article Meta Data',
       type: 'pageMetaData',
       description: 'All fields are optional and will overwrite any default settings when specified.'

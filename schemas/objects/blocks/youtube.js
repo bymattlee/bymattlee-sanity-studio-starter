@@ -42,7 +42,7 @@ const Preview = ({value}) => {
 }
 
 export default {
-  name: 'youtube',
+  name: 'youtubeBlock',
   type: 'object',
   title: 'YouTube Embed',
   fields: [

@@ -1,10 +1,13 @@
 import S from '@sanity/desk-tool/structure-builder'
-import { MdCreate, MdApps, MdMenu, MdSettings, MdBuild, MdLanguage, MdPeople, MdShowChart } from 'react-icons/lib/md'
+import { MdDescription, MdCreate, MdApps, MdMenu, MdSettings, MdBuild, MdLanguage, MdPeople, MdShowChart } from 'react-icons/lib/md'
 
 export default () =>
   S.list()
     .title('Content')
     .items([
+      S.documentTypeListItem('page')
+        .title('Pages')
+        .icon(MdDescription),
       S.listItem()
         .title('Articles')
         .icon(MdCreate)
