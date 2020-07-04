@@ -7,11 +7,14 @@
   "author": "Matt Lee <matt@bymattlee.com>",
   "scripts": {
     "start": "sanity start",
+    "build": "sanity build",
     "test": "sanity check"
   },
   "keywords": [
     "bymattlee",
-    "sanity"
+    "sanity",
+    "starter",
+    "cms"
   ],
   "dependencies": {
     "@sanity/base": "^1.149.16",
