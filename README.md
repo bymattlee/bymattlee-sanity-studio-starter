@@ -11,7 +11,7 @@ $ yarn
 ```
 ##### 3. Update Sanity API configuration
 In `sanity.json`, enter the `projectId` and `dataset` to connect to cloud API.
-##### 4. Update Dashboard config (optional)
+##### 4. Update Dashboard config
 In `dashboardConfig.json`, update GitHub URLs for reference and Netlify configuration for deployment.
 
 ## Use
