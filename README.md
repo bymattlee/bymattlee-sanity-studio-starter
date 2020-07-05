@@ -27,6 +27,5 @@ $ yarn build
 ## Features
 * Custom dashboard configuration with Netlify deployment
 * Predefined fields for Pages, Articles, Sections, Menus, Settings (SEO, Favicons, Social, Analytics)
-* Conditional fields
 * Media browser
 * Use with your favorite front-end setup
