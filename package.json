@@ -5,6 +5,10 @@
   "description": "ByMattLee Sanity Starter CMS",
   "main": "package.json",
   "author": "Matt Lee <matt@bymattlee.com>",
+  "engines": {
+    "node": ">=12.0.0",
+    "npm": ">=6.9.0"
+  },
   "scripts": {
     "start": "sanity start",
     "build": "sanity build",
