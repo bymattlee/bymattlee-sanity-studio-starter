@@ -3,11 +3,11 @@ import getYouTubeId from 'get-youtube-id'
 import YouTube from 'react-youtube'
 
 const Preview = ({value}) => {
-  const { url } = value
+  const {url} = value
   const id = getYouTubeId(url)
   return (
     <>
-      <YouTube videoId={id} className="iframe" containerClassName="embed" />
+      <YouTube videoId={id} className='iframe' containerClassName='embed' />
       <style jsx>{`
         .iframe {
           bottom: 0;

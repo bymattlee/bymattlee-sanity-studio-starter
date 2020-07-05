@@ -10,6 +10,4 @@ const hiddenDocTypes = listItem =>
     'settingsAnalytics'
   ].includes(listItem.getId())
 
-export default [
-  ...S.defaultInitialValueTemplateItems().filter(hiddenDocTypes)
-]
+export default [...S.defaultInitialValueTemplateItems().filter(hiddenDocTypes)]

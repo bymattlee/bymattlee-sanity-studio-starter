@@ -1,7 +1,7 @@
 export default {
   widgets: [
     {
-      name: 'structure-menu',
+      name: 'structure-menu'
     },
     {
       name: 'project-info',
@@ -24,13 +24,14 @@ export default {
       name: 'netlify',
       options: {
         title: 'Netlify Deploys',
-        description: 'NOTE: Because these sites are static builds, they need to be re-deployed to see the changes when documents are published.',
+        description:
+          'NOTE: Because these sites are static builds, they need to be re-deployed to see the changes when documents are published.',
         sites: [
           {
             title: 'Sanity',
             apiId: 'XXX',
             buildHookId: 'XXX',
-            name: 'XXX',
+            name: 'XXX'
           },
           {
             title: 'Website',

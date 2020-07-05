@@ -1,4 +1,4 @@
-import { MdPerson } from 'react-icons/lib/md'
+import {MdPerson} from 'react-icons/lib/md'
 
 export default {
   name: 'socialSiteYouTube',
@@ -17,7 +17,7 @@ export default {
     select: {
       url: 'youtubeUrl'
     },
-    prepare({ url }) {
+    prepare ({url}) {
       return {
         title: 'YouTube',
         subtitle: url

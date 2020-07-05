@@ -6,5 +6,7 @@ import {toPropsStream} from './props'
 export default {
   name: 'structure-menu',
   component: withRouterHOC(withPropsStream(toPropsStream, StructureMenuWidget)),
-  layout: {width: 'full'}
+  layout: {
+    width: 'full'
+  }
 }

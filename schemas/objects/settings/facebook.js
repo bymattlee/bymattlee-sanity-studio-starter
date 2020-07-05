@@ -1,4 +1,4 @@
-import { MdPerson } from 'react-icons/lib/md'
+import {MdPerson} from 'react-icons/lib/md'
 
 export default {
   name: 'socialSiteFacebook',
@@ -17,7 +17,7 @@ export default {
     select: {
       url: 'facebookUrl'
     },
-    prepare({ url }) {
+    prepare ({url}) {
       return {
         title: 'Facebook',
         subtitle: url

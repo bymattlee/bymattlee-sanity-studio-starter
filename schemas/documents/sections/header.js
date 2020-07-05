@@ -1,4 +1,4 @@
-import { MdViewAgenda } from 'react-icons/lib/md'
+import {MdViewAgenda} from 'react-icons/lib/md'
 
 export default {
   name: 'sectionsHeader',
@@ -11,7 +11,11 @@ export default {
       title: 'Header Menu',
       type: 'reference',
       description: 'Select the menu that will be used in the header.',
-      to: [{ type: 'menu' }]
+      to: [
+        {
+          type: 'menu'
+        }
+      ]
     }
   ]
 }

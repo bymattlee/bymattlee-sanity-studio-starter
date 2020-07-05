@@ -1,6 +1,11 @@
 /* global __DEV__ */
 
-import {defer, from as observableFrom, of as observableOf, throwError} from 'rxjs'
+import {
+  defer,
+  from as observableFrom,
+  of as observableOf,
+  throwError
+} from 'rxjs'
 import {mergeMap} from 'rxjs/operators'
 import StructureBuilder from '@sanity/desk-tool/structure-builder'
 
@@ -12,7 +17,10 @@ if (__DEV__) {
 }
 
 export function isSubscribable (thing) {
-  return thing && (typeof thing.then === 'function' || typeof thing.subscribe === 'function')
+  return (
+    thing &&
+    (typeof thing.then === 'function' || typeof thing.subscribe === 'function')
+  )
 }
 
 export function isStructure (structure) {
@@ -63,7 +71,8 @@ export function getDefaultStructure () {
 export function loadStructure () {
   let structure
   try {
-    const mod = require('part:@sanity/desk-tool/structure?') || getDefaultStructure()
+    const mod =
+      require('part:@sanity/desk-tool/structure?') || getDefaultStructure()
     structure = mod && mod.__esModule ? mod.default : mod
 
     // On invalid modules, when HMR kicks in, we sometimes get an empty object back when the

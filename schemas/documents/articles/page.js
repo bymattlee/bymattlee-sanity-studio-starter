@@ -1,4 +1,4 @@
-import { MdDescription } from 'react-icons/lib/md'
+import {MdDescription} from 'react-icons/lib/md'
 
 export default {
   name: 'page',
@@ -16,7 +16,7 @@ export default {
       name: 'hideTitle',
       title: 'Hide Title?',
       description: 'Set to true to hide page title.',
-      type: 'boolean',
+      type: 'boolean'
     },
     {
       name: 'slug',
@@ -35,15 +35,20 @@ export default {
       description: 'Add, edit, and reorder sections on the page.',
       type: 'array',
       of: [
-        { type: 'richTextSection' },
-        { type: 'latestArticlesSection' }
+        {
+          type: 'richTextSection'
+        },
+        {
+          type: 'latestArticlesSection'
+        }
       ]
     },
     {
       name: 'pageMetaData',
       title: 'Page Meta Data',
       type: 'pageMetaData',
-      description: 'All fields are optional and will overwrite any default settings when specified.'
+      description:
+        'All fields are optional and will overwrite any default settings when specified.'
     }
   ]
 }

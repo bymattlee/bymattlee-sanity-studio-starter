@@ -5,8 +5,12 @@ import React from 'react'
 import styles from './StructureMenuWidget.css'
 
 function getIconComponent (item) {
-  if (item.icon) return item.icon
-  if (!item.schemaType) return FileIcon
+  if (item.icon) {
+    return item.icon
+  }
+  if (!item.schemaType) {
+    return FileIcon
+  }
   return item.schemaType.icon || FolderIcon
 }
 

@@ -1,4 +1,4 @@
-import { MdBuild } from 'react-icons/lib/md'
+import {MdBuild} from 'react-icons/lib/md'
 
 export default {
   name: 'settingsSeo',
@@ -16,14 +16,16 @@ export default {
       name: 'siteDescription',
       title: 'Site Description',
       type: 'text',
-      description: 'Used as the default meta description when one is not specified on a page for SEO.',
+      description:
+        'Used as the default meta description when one is not specified on a page for SEO.',
       rows: 4
     },
     {
       name: 'siteShareImage',
       title: 'Site Share Image',
       type: 'image',
-      description: 'Used as the default share image when one is not specified on a page. Recommended size: 1200x630px'
+      description:
+        'Used as the default share image when one is not specified on a page. Recommended size: 1200x630px'
     }
   ]
 }

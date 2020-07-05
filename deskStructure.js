@@ -1,5 +1,16 @@
 import S from '@sanity/desk-tool/structure-builder'
-import { MdDescription, MdCreate, MdApps, MdViewAgenda, MdMenu, MdSettings, MdBuild, MdLanguage, MdPeople, MdShowChart } from 'react-icons/lib/md'
+import {
+  MdDescription,
+  MdCreate,
+  MdApps,
+  MdViewAgenda,
+  MdMenu,
+  MdSettings,
+  MdBuild,
+  MdLanguage,
+  MdPeople,
+  MdShowChart
+} from 'react-icons/lib/md'
 
 export default () =>
   S.list()
@@ -31,9 +42,11 @@ export default () =>
                         .filter(
                           '_type == "article" && $catId in categories[]._ref'
                         )
-                        .params({ catId })
+                        .params({
+                          catId
+                        })
                     )
-                  ),
+                ),
               S.documentTypeListItem('articleCategory')
                 .title('Categories')
                 .icon(MdApps)

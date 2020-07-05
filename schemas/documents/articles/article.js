@@ -1,5 +1,5 @@
-import { DateTime } from 'luxon'
-import { MdCreate } from 'react-icons/lib/md'
+import {DateTime} from 'luxon'
+import {MdCreate} from 'react-icons/lib/md'
 
 export default {
   name: 'article',
@@ -41,7 +41,11 @@ export default {
         {
           type: 'reference',
           icon: MdCreate,
-          to: [{ type: 'articleCategory' }],
+          to: [
+            {
+              type: 'articleCategory'
+            }
+          ],
           weak: true
         }
       ]
@@ -50,7 +54,8 @@ export default {
       name: 'featuredImage',
       title: 'Featured Image',
       type: 'image',
-      description: 'Will be displayed at the top of the article detail page and used for the social share image.',
+      description:
+        'Will be displayed at the top of the article detail page and used for the social share image.',
       fields: [
         {
           name: 'alternativeText',
@@ -61,7 +66,7 @@ export default {
             isHighlighted: true
           }
         }
-      ],
+      ]
     },
     {
       name: 'excerpt',
@@ -79,11 +84,12 @@ export default {
       name: 'articleMetaData',
       title: 'Article Meta Data',
       type: 'pageMetaData',
-      description: 'All fields are optional and will overwrite any default settings when specified.'
+      description:
+        'All fields are optional and will overwrite any default settings when specified.'
     }
   ],
   initialValue: {
-    publishedAt: (new Date()).toISOString()
+    publishedAt: new Date().toISOString()
   },
   orderings: [
     {
@@ -122,10 +128,12 @@ export default {
       media: 'featuredImage',
       description: 'excerpt'
     },
-    prepare ({ title = 'No title', publishedAt, media, description }) {
+    prepare ({title = 'No title', publishedAt, media, description}) {
       return {
         title,
-        subtitle: publishedAt ? DateTime.fromISO(publishedAt).toFormat('LLL dd, yyyy') : '',
+        subtitle: publishedAt
+          ? DateTime.fromISO(publishedAt).toFormat('LLL dd, yyyy')
+          : '',
         media,
         description
       }

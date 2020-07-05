@@ -1,4 +1,4 @@
-import { MdPeople } from 'react-icons/lib/md'
+import {MdPeople} from 'react-icons/lib/md'
 
 export default {
   name: 'settingsSocial',
@@ -10,12 +10,21 @@ export default {
       name: 'socialSites',
       title: 'Social Sites',
       type: 'array',
-      description: 'Add and organize the appropriate social media icons and links that will be used in the header, mobile menu and footer.',
+      description:
+        'Add and organize the appropriate social media icons and links that will be used in the header, mobile menu and footer.',
       of: [
-        { type: 'socialSiteFacebook' },
-        { type: 'socialSiteTwitter' },
-        { type: 'socialSiteInstagram' },
-        { type: 'socialSiteYouTube' }
+        {
+          type: 'socialSiteFacebook'
+        },
+        {
+          type: 'socialSiteTwitter'
+        },
+        {
+          type: 'socialSiteInstagram'
+        },
+        {
+          type: 'socialSiteYouTube'
+        }
       ]
     },
     {

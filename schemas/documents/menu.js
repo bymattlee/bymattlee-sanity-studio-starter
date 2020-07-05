@@ -1,4 +1,4 @@
-import { MdMenu } from 'react-icons/lib/md'
+import {MdMenu} from 'react-icons/lib/md'
 
 export default {
   name: 'menu',
@@ -16,7 +16,11 @@ export default {
       name: 'menuItems',
       title: 'Menu Items',
       type: 'array',
-      of: [{ type: 'menuItem' }]
+      of: [
+        {
+          type: 'menuItem'
+        }
+      ]
     }
   ]
 }

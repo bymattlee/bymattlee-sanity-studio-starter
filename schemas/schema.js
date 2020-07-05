@@ -29,7 +29,6 @@ import socialSiteYouTube from './objects/settings/youtube'
 export default createSchema({
   name: 'default',
   types: schemaTypes.concat([
-
     /* Documents */
     page,
     article,
@@ -54,6 +53,5 @@ export default createSchema({
     socialSiteTwitter,
     socialSiteInstagram,
     socialSiteYouTube
-
   ])
 })
