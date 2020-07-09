@@ -1,4 +1,4 @@
-import {MdPerson} from 'react-icons/lib/md'
+import {MdPerson} from 'react-icons/md'
 
 export default {
   name: 'socialSiteFacebook',

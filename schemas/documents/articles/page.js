@@ -1,4 +1,4 @@
-import {MdDescription} from 'react-icons/lib/md'
+import {MdDescription} from 'react-icons/md'
 
 export default {
   name: 'page',
@@ -11,12 +11,6 @@ export default {
       title: 'Title',
       type: 'string',
       validation: Rule => Rule.required()
-    },
-    {
-      name: 'hideTitle',
-      title: 'Hide Title?',
-      description: 'Set to true to hide page title.',
-      type: 'boolean'
     },
     {
       name: 'slug',

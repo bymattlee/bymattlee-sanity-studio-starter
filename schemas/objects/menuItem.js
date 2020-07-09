@@ -1,4 +1,4 @@
-import {MdCreate} from 'react-icons/lib/md'
+import {MdCreate} from 'react-icons/md'
 
 export default {
   name: 'menuItem',
@@ -16,7 +16,7 @@ export default {
       name: 'menuItemUrl',
       title: 'Menu Item URL',
       type: 'string',
-      description: "Add a relative path for internal links. Example: '/home/'",
+      description: "Add a relative path for internal links. Example: '/about/'",
       validation: Rule => Rule.required()
     },
     {
@@ -29,11 +29,12 @@ export default {
   preview: {
     select: {
       title: 'menuItemName',
-      subtitle: 'menuItemUrl'
+      subtitle: 'menuItemUrl',
+      openInNewTab: 'openInNewTab'
     },
-    prepare ({title, subtitle}) {
+    prepare ({title, subtitle, openInNewTab}) {
       return {
-        title,
+        title: `${title}${openInNewTab ? ' (External)' : ''}`,
         subtitle
       }
     }

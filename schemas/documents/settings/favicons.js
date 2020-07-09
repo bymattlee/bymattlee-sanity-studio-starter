@@ -1,4 +1,4 @@
-import {MdLanguage} from 'react-icons/lib/md'
+import {MdLanguage} from 'react-icons/md'
 
 export default {
   name: 'settingsFavicons',

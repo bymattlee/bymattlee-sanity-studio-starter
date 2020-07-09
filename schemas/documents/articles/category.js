@@ -1,4 +1,4 @@
-import {MdApps} from 'react-icons/lib/md'
+import {MdApps} from 'react-icons/md'
 
 export default {
   name: 'articleCategory',

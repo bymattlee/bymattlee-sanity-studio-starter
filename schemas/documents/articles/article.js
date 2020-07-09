@@ -1,5 +1,5 @@
 import {DateTime} from 'luxon'
-import {MdCreate} from 'react-icons/lib/md'
+import {MdCreate} from 'react-icons/md'
 
 export default {
   name: 'article',

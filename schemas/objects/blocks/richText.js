@@ -1,3 +1,5 @@
+import {FiLink, FiExternalLink} from 'react-icons/fi'
+
 export default {
   name: 'richTextBlock',
   type: 'array',
@@ -55,19 +57,37 @@ export default {
         ],
         annotations: [
           {
-            name: 'link',
+            name: 'internalLink',
             type: 'object',
-            title: 'URL',
+            title: 'Internal link',
+            blockEditor: {
+              icon: FiLink
+            },
             fields: [
               {
-                title: 'URL',
-                name: 'href',
-                type: 'url'
-              },
+                name: 'reference',
+                type: 'reference',
+                title: 'Reference',
+                to: [
+                  { type: 'article' },
+                  { type: 'page' }
+                ]
+              }
+            ]
+          },
+          {
+            name: 'externalLink',
+            type: 'object',
+            title: 'External link',
+            description: 'This link will open in a new tab.',
+            blockEditor: {
+              icon: FiExternalLink
+            },
+            fields: [
               {
-                title: 'Open In New Tab?',
-                name: 'openInNewTab',
-                type: 'boolean'
+                name: 'href',
+                type: 'url',
+                title: 'URL'
               }
             ]
           }
@@ -75,10 +95,12 @@ export default {
       }
     },
     {
-      type: 'imageBlock'
+      type: 'imageBlock',
+      validation: Rule => Rule.required()
     },
     {
-      type: 'youtubeBlock'
+      type: 'youtubeBlock',
+      validation: Rule => Rule.required()
     }
   ]
 }

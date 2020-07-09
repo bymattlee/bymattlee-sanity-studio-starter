@@ -1,4 +1,4 @@
-import {MdViewAgenda} from 'react-icons/lib/md'
+import {MdViewAgenda} from 'react-icons/md'
 
 export default {
   name: 'sectionsFooter',

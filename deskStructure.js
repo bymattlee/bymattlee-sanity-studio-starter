@@ -10,7 +10,7 @@ import {
   MdLanguage,
   MdPeople,
   MdShowChart
-} from 'react-icons/lib/md'
+} from 'react-icons/md'
 
 export default () =>
   S.list()
