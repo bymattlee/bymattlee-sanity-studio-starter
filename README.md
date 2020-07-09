@@ -9,9 +9,11 @@ A starter headless CMS that features Sanity Studio and includes basic sections a
 ```
 $ yarn
 ```
-##### 3. Update Sanity API configuration
+
+## Configuration
+##### 1. Update Sanity API configuration
 In `sanity.json`, enter the `projectId` and `dataset` to connect to cloud API.
-##### 4. Update Dashboard config
+##### 2. Update Dashboard config
 In `dashboardConfig.json`, update GitHub URLs for reference and Netlify configuration for deployment.
 
 ## Use
@@ -26,6 +28,11 @@ $ yarn build
 
 ## Features
 * Custom dashboard configuration with Netlify deployment
-* Predefined fields for Pages, Articles, Sections, Menus, Settings (SEO, Favicons, Social, Analytics)
+* Predefined fields and blocks for Pages, Articles, Sections, Menus, Settings (SEO, Favicons, Social, Analytics)
 * Media browser
 * Use with your favorite front-end setup
+
+## Customizations
+* Customize dashboard logo in `parts/customLogo.js`
+* Customize favicon by replacing `favicon.ico` in `/static`
+* Customize dashboard brand colors in `styles/variables.css`
