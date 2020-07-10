@@ -1,9 +1,7 @@
-[![ByMattLee](http://hosted.bymattlee.com/github/bymattlee-logo.png)](http://bymattlee.com)
+![ByMattLee Sanity Starter CMS Screenshot](http://hosted.bymattlee.com/github/bymattlee-sanity-starter-cms-screenshot.jpg)
 
 # ByMattLee Sanity Starter CMS
 A starter headless CMS that features Sanity Studio and includes basic sections and fields.
-
-![ByMattLee Sanity Starter CMS Screenshot](http://hosted.bymattlee.com/github/bymattlee-sanity-starter-cms-screenshot.jpg)
 
 ## Installation
 ##### 1. Install Node >=12.0.0: <https://nodejs.org/en/>
