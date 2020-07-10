@@ -76,10 +76,9 @@ export default {
             ]
           },
           {
-            name: 'externalLink',
+            name: 'link',
             type: 'object',
-            title: 'External link',
-            description: 'This link will open in a new tab.',
+            title: 'Link',
             blockEditor: {
               icon: FiExternalLink
             },
@@ -87,7 +86,8 @@ export default {
               {
                 name: 'href',
                 type: 'url',
-                title: 'URL'
+                title: 'URL',
+                description: 'This link will open in a new tab.',
               }
             ]
           }

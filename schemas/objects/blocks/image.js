@@ -1,7 +1,7 @@
 export default {
   name: 'imageBlock',
-  type: 'image',
   title: 'Image',
+  type: 'image',
   fields: [
     {
       name: 'caption',
