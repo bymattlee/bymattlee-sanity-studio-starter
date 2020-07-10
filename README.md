@@ -27,10 +27,10 @@ $ yarn build
 ```
 
 ## Features
+* Use with your favorite front-end setup. This pairs perfectly with the [ByMattLee Web Starter Files](https://github.com/bymattlee/bymattlee-web-starter-files)
 * Custom dashboard configuration with Netlify deployment
 * Predefined fields and blocks for Pages, Articles, Sections, Menus, Settings (SEO, Favicons, Social, Analytics)
 * Media browser
-* Use with your favorite front-end setup
 
 ## Customizations
 * Customize dashboard logo in `parts/customLogo.js`
