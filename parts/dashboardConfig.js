@@ -41,6 +41,9 @@ export default {
           }
         ]
       }
+    },
+    {
+      name: 'project-users'
     }
   ]
 }
