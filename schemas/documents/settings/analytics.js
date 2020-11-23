@@ -10,7 +10,7 @@ export default {
       name: 'googleAnalyticsId',
       title: 'Google Analytics ID',
       type: 'string',
-      description: 'Format: XX-XXXXXXXX-XX'
+      description: 'Created and obtained from the Google Analytics dashboard.'
     }
   ]
 }
