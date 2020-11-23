@@ -33,6 +33,5 @@ $ yarn build
 * Media browser
 
 ## Customizations
-* Customize dashboard logo in `parts/customLogo.js`
 * Customize favicon by replacing `favicon.ico` in `/static`
 * Customize dashboard brand colors in `styles/variables.css`
