@@ -12,7 +12,8 @@ export default {
       name: 'pageDescription',
       title: 'Page Description',
       type: 'text',
-      rows: 4
+      rows: 4,
+      validation: Rule => Rule.max(150)
     },
     {
       name: 'pageShareImage',

@@ -18,7 +18,8 @@ export default {
       type: 'text',
       description:
         'Used as the default meta description when one is not specified on a page for SEO.',
-      rows: 4
+      rows: 4,
+      validation: Rule => Rule.max(150)
     },
     {
       name: 'siteShareImage',

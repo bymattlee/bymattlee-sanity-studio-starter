@@ -72,6 +72,11 @@ export default {
                   { type: 'article' },
                   { type: 'page' }
                 ]
+              },
+              {
+                title: 'Link button?',
+                name: 'linkButton',
+                type: 'boolean'
               }
             ]
           },
@@ -88,6 +93,11 @@ export default {
                 type: 'url',
                 title: 'URL',
                 description: 'This link will open in a new tab.',
+              },
+              {
+                title: 'Link button?',
+                name: 'linkButton',
+                type: 'boolean'
               }
             ]
           }
