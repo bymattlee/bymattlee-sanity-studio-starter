@@ -32,6 +32,7 @@
     "@sanity/default-login": "^2.1.0",
     "@sanity/desk-tool": "^2.1.0",
     "@sanity/vision": "^2.1.0",
+    "@u-wave/react-vimeo": "^0.9.1",
     "get-youtube-id": "^1.0.1",
     "luxon": "^1.24.1",
     "prop-types": "^15.7",

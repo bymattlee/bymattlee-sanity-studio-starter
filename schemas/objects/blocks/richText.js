@@ -111,6 +111,10 @@ export default {
     {
       type: 'youtubeBlock',
       validation: Rule => Rule.required()
+    },
+    {
+      type: 'vimeoBlock',
+      validation: Rule => Rule.required()
     }
   ]
 }
