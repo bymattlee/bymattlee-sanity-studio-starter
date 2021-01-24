@@ -1,6 +1,6 @@
-![ByMattLee Sanity Starter CMS Screenshot](http://hosted.bymattlee.com/github/bymattlee-sanity-starter-cms-screenshot.jpg)
+![ByMattLee Sanity Studio Starter Screenshot](http://hosted.bymattlee.com/github/bymattlee-sanity-studio-starter-screenshot.jpg)
 
-# ByMattLee Sanity Starter CMS
+# ByMattLee Sanity Studio Starter
 A starter headless CMS that features Sanity Studio and includes basic sections and fields.
 
 ## Installation
