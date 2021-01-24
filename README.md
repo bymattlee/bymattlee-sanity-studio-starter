@@ -31,7 +31,7 @@ $ yarn build
 ```
 
 ## Features
-* Use with your favorite front-end setup. This pairs perfectly with the [ByMattLee Web Starter Files](https://github.com/bymattlee/bymattlee-web-starter-files)
+* Use with your favorite front-end setup. This pairs perfectly with the [ByMattLee 11ty Starter](https://github.com/bymattlee/bymattlee-11ty-starter) or [ByMattLee Nuxt Starter](https://github.com/bymattlee/bymattlee-nuxt-starter)
 * Custom dashboard configuration with Netlify deployment
 * Predefined fields and blocks for Pages, Articles, Sections, Menus, Settings (SEO, Favicons, Social, Analytics)
 * Media browser
