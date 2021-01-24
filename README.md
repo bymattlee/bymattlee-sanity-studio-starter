@@ -21,13 +21,17 @@ In `sanity.json`, enter the `projectId` and `dataset` to connect to cloud API.
 In `dashboardConfig.json`, update GitHub URLs for reference and Netlify configuration for deployment.
 
 ## Use
-##### Build Files And Start Development Server
+##### Build Files And Start Server
 ```
 $ yarn start
 ```
 ##### Build Files
 ```
 $ yarn build
+```
+##### Deploy Studio
+```
+$ yarn deploy
 ```
 
 ## Features
