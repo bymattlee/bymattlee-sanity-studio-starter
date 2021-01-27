@@ -21,7 +21,9 @@ export default {
         maxLength: 96
       },
       description: 'Used to determine the path of the page.',
-      validation: Rule => Rule.required()
+      validation: Rule => Rule.custom(slug => {
+        return slug.current === 'articles' ? 'A page has already been set with this slug.' : true
+      })
     },
     {
       name: 'pageSections',
