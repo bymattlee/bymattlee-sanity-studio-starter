@@ -4,7 +4,7 @@
 A starter headless CMS that features Sanity Studio and includes basic sections and fields.
 
 ## Installation
-##### 1. Install Node >=12.0.0: <https://nodejs.org/en/>
+##### 1. Install Node >=12.22.0: <https://nodejs.org/en/>
 ##### 2. Install Yarn
 ```
 $ npm i -g yarn
