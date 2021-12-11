@@ -2,6 +2,7 @@ import S from '@sanity/desk-tool/structure-builder'
 
 const hiddenDocTypes = listItem =>
   ![
+    'media.tag',
     'sectionsHeader',
     'sectionsFooter',
     'settingsSeo',
