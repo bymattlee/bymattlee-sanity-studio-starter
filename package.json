@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "private": true,
   "engines": {
-    "node": ">=14.17.0"
+    "node": "16.17.1"
   },
   "main": "package.json",
   "author": "Matt Lee <matt@bymattlee.com>",
